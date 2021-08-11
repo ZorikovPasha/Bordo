@@ -1,0 +1,29 @@
+
+
+.about {
+
+  padding: 46px 0 93px;
+
+  // .about__inner
+
+  &__inner {
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  // .about__title
+
+  &__title {
+    @extend %h1;
+    margin-bottom: 46px;
+  }
+
+  // .about__text
+
+  &__text {
+    font-size: 12px;
+    line-height: 21px;
+    color: #515151;
+    margin-bottom: 25px;
+  }
+}

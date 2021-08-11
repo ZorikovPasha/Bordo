@@ -81,4 +81,8 @@ $('.category-aside__title').on('click', function(e) {
 
   $('.filter-style').styler();
 
+  $('.favorite__item-btn').on('click', function() {
+    $(this).parent().parent().parent().parent('.favorite__item').addClass('removed');
+  })
+
 });
