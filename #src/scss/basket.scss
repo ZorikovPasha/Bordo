@@ -1,5 +1,10 @@
 .basket {
 
+  .jq-selectbox__select {
+    width: 95px;
+    height: 40px;
+  }
+
   padding: 46px 0 95px;
 
   // .basket__inner
@@ -25,11 +30,13 @@
     // grid-row-gap: 35px;
     // align-items: center;
     // grid-column-gap: 95px 50px 63px 150px;
+    padding-bottom: 22px;
   }
 
   &__row {
     display: flex;
     align-items: center;
+    margin-bottom: 35px;
     &.removed {
       display: none;
     }
@@ -145,6 +152,9 @@
   &__remove-btn {
     background-color: transparent;
     border: none;
-    &.active {}
+  }
+
+  &__btn {
+    padding: 12px 30px 9px;
   }
 }

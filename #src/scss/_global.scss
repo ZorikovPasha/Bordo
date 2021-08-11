@@ -64,6 +64,12 @@ button {
   font-size: 16px;
   display: inline-block;
   cursor: pointer;
+  &:hover {
+    background-color: rgba(#000, .9);
+  }
+  &:active {
+    background-color: rgba(#000, .7);
+  }
 }
 
 .input {
@@ -139,9 +145,6 @@ button {
       transform: translate(0%, -2px);
       
     }
-  }
-
-  &__imglink {
   }
 
   &__images {

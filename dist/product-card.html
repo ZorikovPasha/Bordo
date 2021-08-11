@@ -23,7 +23,7 @@
             <nav class="header__top-nav">
               <ul class="header__top-list top-list">
                 <li class="top-list__item">
-                  <a class="top-list__link" href="#">О магазине</a>
+                  <a class="top-list__link" href="about.html">О магазине</a>
                 </li>
                 <li class="top-list__item">
                   <a class="top-list__link" href="#">Политика</a>
@@ -32,7 +32,7 @@
                   <a class="top-list__link" href="#">Вопросы</a>
                 </li>
                 <li class="top-list__item">
-                  <a class="top-list__link" href="#">Оплата и доставка</a>
+                  <a class="top-list__link" href="delivery.html">Оплата и доставка</a>
                 </li>
               </ul>
             </nav>
@@ -61,10 +61,10 @@
             <nav class="header__bottom-nav">
               <ul class="header__bottom-list bottom-list">
                 <li class="bottom-list__item">
-                  <a class="bottom-list__link" href="#">Новинки</a>
+                  <a class="bottom-list__link" href="catalogue.html">Новинки</a>
                 </li>
                 <li class="bottom-list__item">
-                  <a class="bottom-list__link" href="#">Одежда и обувь</a>
+                  <a class="bottom-list__link" href="category.html">Одежда и обувь</a>
                 </li>
                 <li class="bottom-list__item">
                   <a class="bottom-list__link" href="#">Магазины</a>
@@ -80,7 +80,7 @@
             <nav class="header__user-nav user-nav">
               <ul class="user-nav__list">
                 <li class="user-nav__item">
-                  <a class="user-nav__link" href="#">
+                  <a class="user-nav__link" href="profile.html">
                     <img class="user-nav__img" src="images/user-nav-1.svg" alt="">
                   </a>
                 </li>
@@ -91,13 +91,13 @@
                 </li>
 
                 <li class="user-nav__item">
-                  <a class="user-nav__link" href="#">
+                  <a class="user-nav__link" href="favorite.html">
                     <img class="user-nav__img" src="images/user-nav-3.svg" alt="">
                   </a>
                 </li>
 
                 <li class="user-nav__item">
-                  <a class="user-nav__link" href="#">
+                  <a class="user-nav__link" href="basket.html">
                     <img class="user-nav__img" src="images/user-nav-4.svg" alt="">
                   </a>
                 </li>
@@ -115,10 +115,9 @@
           <div class="product-card__linkwrapper">
             <a class="product-card__link" href="category.html">Джемперы и свитшоты</a>
           </div>
-          <div class="product-card__tabs">
-
-            <div class="product-card__tab-wrapper" id="color-ECECEC">
-              <div class="product-card__tab">
+          <div class="product-card__slider">
+            <div class="product-card__slider-item">
+              <div class="product-card__slider-inner">
                 <div class="product-card__images">
                   <div class="product-card__wrapper">
                     <img class="product-card__img" src="images/card/card-1.jpg" alt="">
@@ -133,7 +132,7 @@
                     <img class="product-card__img" src="images/card/card-1.jpg" alt="">
                   </div>
                 </div>
-                <div class="product-card__slider">
+                <div class="product-card__imgslider">
                   <div class="product-card__bigimg">
                     <img src="images/card/card-img.jpg" alt="">
                   </div>
@@ -150,9 +149,8 @@
               </div>
             </div>
 
-
-            <div class="product-card__tab-wrapper active" id="color-000000">
-              <div class="product-card__tab">
+             <div class="product-card__slider-item">
+               <div class="product-card__slider-inner">
                 <div class="product-card__images">
                   <div class="product-card__wrapper">
                     <img class="product-card__img" src="images/card/card-1.jpg" alt="">
@@ -167,7 +165,7 @@
                     <img class="product-card__img" src="images/card/card-1.jpg" alt="">
                   </div>
                 </div>
-                <div class="product-card__slider">
+                <div class="product-card__imgslider">
                   <div class="product-card__bigimg">
                     <img src="images/card/card-img.jpg" alt="">
                   </div>
@@ -181,10 +179,11 @@
                     <img src="images/card/card-img.jpg" alt="">
                   </div>
                 </div>
-              </div>
+               </div>
             </div>
-            <div class="product-card__tab-wrapper" id="color-deffe7">
-              <div class="product-card__tab">
+
+            <div class="product-card__slider-item">
+              <div class="product-card__slider-inner">
                 <div class="product-card__images">
                   <div class="product-card__wrapper">
                     <img class="product-card__img" src="images/card/card-1.jpg" alt="">
@@ -199,7 +198,7 @@
                     <img class="product-card__img" src="images/card/card-1.jpg" alt="">
                   </div>
                 </div>
-                <div class="product-card__slider">
+                <div class="product-card__imgslider">
                   <div class="product-card__bigimg">
                     <img src="images/card/card-img.jpg" alt="">
                   </div>
@@ -214,25 +213,44 @@
                   </div>
                 </div>
               </div>
-            </div>
-
-
-
-
+            </div> 
           </div>
+
           <div class="product-card__info">
             <div class="product-card__code">АРТ 6789765432</div>
             <p class="product-card__name">Футболка удлиненная</p>
             <p class="product-card__price">560 ₽</p>
-            <div class="product-card__colors">
-              <a class="product-card__color" href="#color-ECECEC" style="background-color: #ECECEC;"></a>
-              <a class="product-card__color" href="#color-000000" style="background-color: #000000;"></a>
-              <a class="product-card__color" href="#color-deffe7" style="background-color: #deffe7;"></a>
+            <div class="product-card__colors-slider">
+              <div class="colors-slider__item">
+                <a class="product-card__color" href="#color-ECECEC" style="background-color: #ECECEC;"></a>
+              </div>
+              <div class="colors-slider__item">
+                <a class="product-card__color" href="#color-000000" style="background-color: #000000;"></a>
+              </div>
+              <div class="colors-slider__item">
+                <a class="product-card__color" href="#color-deffe7" style="background-color: #deffe7;"></a>
+              </div>
             </div>
-            <p class="product-card__colors-text">
-              Цвет:
-              <span>Баклажановый</span>
-            </p>
+            <div class="product-card__colors-tabs">
+              <div class="product-card__colors-tab active" id="color-ECECEC">
+                <p class="product-card__colors-text">
+                  Цвет:
+                  <span>Белый</span>
+                </p>  
+              </div>
+              <div class="product-card__colors-tab" id="color-000000">
+                <p class="product-card__colors-text">
+                  Цвет:
+                  <span>Черный</span>
+                </p>  
+              </div>
+              <div class="product-card__colors-tab" id="color-deffe7">
+                <p class="product-card__colors-text">
+                  Цвет:
+                  <span>Баклажановый</span>
+                </p>  
+              </div>
+            </div>
             <div class="product-card__select">
               <select class="filter-style">
                 <option>Выбрать размер</option>
@@ -258,7 +276,6 @@
               <p class="product-card__details-text">Состав: 70% Лиоцелл, 30% Хлопок</p>
               <p class="product-card__details-text">Параметры модели: 178/84/60/88</p>
               <p class="product-card__details-text">На модели размер S</p>
-  
             </div>
           </div>
         </div>
@@ -268,59 +285,55 @@
             <div class="page-section__inner">
               <div class="page-section__top">
                 <p class="page-section__name">Джемперы и свитшоты</p>
-                <a class="page-section__link" href="#">Все товары</a>
+                <a class="page-section__link" href="category.html">Все товары</a>
               </div>
               <div class="page-section__items">
                 <div class="page-section__item">
-                  <a href="#">
-                    
+                  <a href="product-card.html">
+                    <img src="images/jempers/1.jpg" alt="" class="page-section__img">
+                    <p class="page-section__text" >Футболка удлиненная</p>
+                    <p class="page-section__price">560 ₽</p>
+                    <div class="page-section__colors">
+                      <span class="color-ECECEC"></span>
+                      <span class="color-1D1D1D"></span>
+                      <span class="color-3A814E"></span>
+                    </div>  
                   </a>
-                  <img src="images/jempers/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
-                  <p class="page-section__price">560 ₽</p>
-                  <div class="page-section__colors">
-                    <span class="color-ECECEC"></span>
-                    <span class="color-1D1D1D"></span>
-                    <span class="color-3A814E"></span>
-                  </div>
                 </div>
                 <div class="page-section__item">
-                  <a href="#">
+                  <a href="product-card.html">
                     <img src="images/jempers/2.jpg" alt="" class="page-section__img">
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">600 ₽</p>
                     <div class="page-section__colors">
                       <span class="color-6B46B9"></span>
                       <span class="color-E63838"></span>
                       <span class="color-F0E9AA"></span>
                     </div>
-    
                   </a>
                 </div>
                 <div class="page-section__item">
-                  <a href="#">
+                  <a href="product-card.html">
                     <img src="images/jempers/3.jpg" alt="" class="page-section__img">
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">420 ₽</p>
                     <div class="page-section__colors">
                       <span class="color-E17614"></span>
                       <span class="color-0C98C4"></span>
                       <span class="color-F9D311"></span>
                     </div>
-    
                   </a>
                 </div>
                 <div class="page-section__item">
-                  <a href="#">
+                  <a href="product-card.html">
                     <img src="images/jempers/4.jpg" alt="" class="page-section__img">
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">780 ₽</p>
                     <div class="page-section__colors">
                       <span class="color-ECECEC"></span>
                       <span class="color-1D1D1D"></span>
                       <span class="color-3A814E"></span>
                     </div>
-    
                   </a>
                 </div>
               </div>
@@ -328,22 +341,19 @@
           </div>
         </section>
   
-
         <section class="page-section">
           <div class="container">
             <div class="page-section__inner">
               <div class="page-section__top">
                 <p class="page-section__name">Сезонная распродажа</p>
-                <a class="page-section__link" href="#">Все товары</a>
+                <a class="page-section__link" href="category.html">Все товары</a>
               </div>
               <div class="page-section__items">
   
                 <div class="page-section__item">
-                  <a href="#">
-                    <a class="page-section__imglink" href="#">
-                      <img class="page-section__img" src="images/sale/1.jpg" alt="">
-                    </a>  
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <a href="product-card.html">
+                    <img class="page-section__img" src="images/sale/1.jpg" alt="">
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">560 ₽</p>
                     <div class="page-section__colors">
                       <span class="page-section__color color-ECECEC"></span>
@@ -354,11 +364,9 @@
                 </div>
   
                 <div class="page-section__item">
-                  <a href="#">
-                    <a class="page-section__imglink" href="#">
-                      <img class="page-section__img" src="images/sale/2.jpg" alt="">
-                    </a>  
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <a href="product-card.html">
+                    <img class="page-section__img" src="images/sale/2.jpg" alt="">
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">560 ₽</p>
                     <div class="page-section__colors">
                       <span class="page-section__color color-6B46B9"></span>
@@ -369,11 +377,9 @@
                 </div>
   
                 <div class="page-section__item">
-                  <a href="#">
-                    <a class="page-section__imglink" href="#">
-                      <img class="page-section__img" src="images/sale/3.jpg" alt="">
-                    </a>  
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <a href="product-card.html">
+                    <img class="page-section__img" src="images/sale/3.jpg" alt="">
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">560 ₽</p>
                     <div class="page-section__colors">
                       <span class="page-section__color color-E17614"></span>
@@ -384,11 +390,9 @@
                 </div>
   
                 <div class="page-section__item">
-                  <a href="#">
-                    <a class="page-section__imglink" href="#">
-                      <img class="page-section__img" src="images/sale/4.jpg" alt="">
-                    </a>  
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <a href="product-card.html">
+                    <img class="page-section__img" src="images/sale/4.jpg" alt="">
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">560 ₽</p>
                     <div class="page-section__colors">
                       <span class="page-section__color color-ECECEC"></span>
@@ -408,13 +412,13 @@
             <div class="page-section__inner">
               <div class="page-section__top">
                 <p class="page-section__name">Новинки</p>
-                <a class="page-section__link" href="#">Все товары</a>
+                <a class="page-section__link" href="category.html">Все товары</a>
               </div>
               <div class="page-section__items">
                 <div class="page-section__item">
-                  <a href="#">
+                  <a href="product-card.html">
                     <img src="images/new/1.jpg" alt="" class="page-section__img">
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">560 ₽</p>
                     <div class="page-section__colors">
                       <span class="color-ECECEC"></span>
@@ -425,9 +429,9 @@
                   </a>
                 </div>
                 <div class="page-section__item">
-                  <a href="#">
+                  <a href="product-card.html">
                     <img src="images/new/2.jpg" alt="" class="page-section__img">
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">600 ₽</p>
                     <div class="page-section__colors">
                       <span class="color-6B46B9"></span>
@@ -438,9 +442,9 @@
                   </a>
                 </div>
                 <div class="page-section__item">
-                  <a href="#">
+                  <a href="product-card.html">
                     <img src="images/new/3.jpg" alt="" class="page-section__img">
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">420 ₽</p>
                     <div class="page-section__colors">
                       <span class="color-E17614"></span>
@@ -451,9 +455,9 @@
                   </a>
                 </div>
                 <div class="page-section__item">
-                  <a href="#">
+                  <a href="product-card.html">
                     <img src="images/new/4.jpg" alt="" class="page-section__img">
-                    <a class="page-section__text" href="#">Футболка удлиненная</a>
+                    <p class="page-section__text" >Футболка удлиненная</p>
                     <p class="page-section__price">780 ₽</p>
                     <div class="page-section__colors">
                       <span class="color-ECECEC"></span>

@@ -11,22 +11,26 @@ $(function(){
     $('.menu').toggleClass('menu--active'); 
   })
 
-$('.category-aside__title').on('click', function(e) {
-  $(this).toggleClass('rollup');
-  $(this).siblings('.category-aside__list').toggleClass('closed');
-})
+  $('.category-aside__title').on('click', function(e) {
+    $(this).toggleClass('rollup');
+    $(this).siblings('.category-aside__list').toggleClass('closed');
+  })
+
+  // слайдер мелких картинок. Связан со слайдером больших картинок
 
   $('.product-card__images').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    asNavFor: '.product-card__slider',
+    asNavFor: '.product-card__imgslider',
     arrows: false,
     vertical: true,
-    // verticalSwiping: true,
     focusOnSelect: true,
+    initialSlide: 0,
   })
 
-  $('.product-card__slider').slick({
+  // слайдер больших картинок. 
+
+  $('.product-card__imgslider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -34,10 +38,30 @@ $('.category-aside__title').on('click', function(e) {
     fade: true,
   });
 
+  // большой слайдер. Соединяет в себе слайдер маленьких картинок и больших картинок.
+  // связан со  слайдером точек цветов.
+
+  $('.product-card__slider').slick({
+    fade: true,
+    arrows: false,
+    asNavFor: '.product-card__colors-slider',
+    swipe: false,
+  });
+
+  // слайдер точек цвета
+
+  $('.product-card__colors-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.product-card__slider',
+    focusOnSelect: true,
+  });
+
   $('.product-card__color').on('click', function(e) {
     e.preventDefault();
 
-    $(this).parent().parent().siblings('.product-card__tabs').children('.product-card__tab-wrapper').removeClass('active');
+    $('.product-card__colors-tab').removeClass('active');
 
     $(this).addClass('active');
     $($(this).attr('href')).addClass('active');
