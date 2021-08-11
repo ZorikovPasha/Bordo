@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <nav class="header__top-nav">
+              <ul class="header__top-list top-list">
+                <li class="top-list__item">
+                  <a class="top-list__link" href="#">О магазине</a>
+                </li>
+                <li class="top-list__item">
+                  <a class="top-list__link" href="#">Политика</a>
+                </li>
+                <li class="top-list__item">
+                  <a class="top-list__link" href="#">Вопросы</a>
+                </li>
+                <li class="top-list__item">
+                  <a class="top-list__link" href="#">Оплата и доставка</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__top-contacts">
+              <ul class="header__top-contactslist top-contacts__list">
+                <li class="top-contacts__list-item">
+                  <a class="top-contacts__list-link top-contacts__list-inst" href="#">Instagram</a>
+                </li>
+                <li class="top-contacts__list-item">
+                  <a class="top-contacts__list-link top-contacts__list-viber" href="#">WhatsApp</a>
+                </li>
+                <li class="top-contacts__list-item">
+                  <a class="top-contacts__list-link" href="tel:+79697775200">+7 (969) 777-52-00</a>
+                </li>
+                <li class="top-contacts__list-item">
+                  <a class="top-contacts__list-link" href="#">Адреса шоурумов</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-inner">
+            <nav class="header__bottom-nav">
+              <ul class="header__bottom-list bottom-list">
+                <li class="bottom-list__item">
+                  <a class="bottom-list__link" href="#">Новинки</a>
+                </li>
+                <li class="bottom-list__item">
+                  <a class="bottom-list__link" href="#">Одежда и обувь</a>
+                </li>
+                <li class="bottom-list__item">
+                  <a class="bottom-list__link" href="#">Магазины</a>
+                </li>
+                <li class="bottom-list__item">
+                  <a class="bottom-list__link" href="#">Покупателям</a>
+                </li>
+              </ul>
+            </nav>
+            <a  class="header__logo" href="#">
+              <img class="header__logo-img" src="images/header-logo.svg" alt="">
+            </a>
+            <nav class="header__user-nav user-nav">
+              <ul class="user-nav__list">
+                <li class="user-nav__item">
+                  <a class="user-nav__link" href="#">
+                    <img class="user-nav__img" src="images/user-nav-1.svg" alt="">
+                  </a>
+                </li>
+                <li class="user-nav__item">
+                  <a class="user-nav__link" href="#">
+                    <img class="user-nav__img" src="images/user-nav-2.svg" alt="">
+                  </a>
+                </li>
+
+                <li class="user-nav__item">
+                  <a class="user-nav__link" href="#">
+                    <img class="user-nav__img" src="images/user-nav-3.svg" alt="">
+                  </a>
+                </li>
+
+                <li class="user-nav__item">
+                  <a class="user-nav__link" href="#">
+                    <img class="user-nav__img" src="images/user-nav-4.svg" alt="">
+                  </a>
+                </li>
+
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <div class="main">
+      <div class="container">
+        <div class="user-info">
+          <div class="user-info__inner">
+            <div class="user-info__top">
+              <h1 class="user-info__title">Информация</h1>
+              <a href="#" class="user-info__link">Выйти из аккаунта</a>
+            </div>
+            <div class="user-info__tabs">
+              <a class="user-info__tab active" href="#content-1">Личный кабинет</a>
+              <a class="user-info__tab" href="#content-2">Бонусные баллы</a>
+              <a class="user-info__tab" href="#content-3">Текущие заказы</a>
+              <a class="user-info__tab" href="#content-4">История заказов</a>
+              <a class="user-info__tab" href="#content-5">Личные данные</a>
+              <a class="user-info__tab" href="#content-6">Подписки</a>
+            </div>
+            <div class="user-info__tab-content active" id="content-1">
+              <span class="user-info__text">Текущий баланс</span>
+              <span class="user-info__price">1 206 руб.</span>
+              <div class="user-info__line">
+                <span class="user-info__text">Получать предупреждения о сгорании бонусов</span>
+                <label class="user-info__label">
+                  <input type="radio" class="user-info__radio" name="isAgree">
+                  <span class="user-info__radiofake"></span>
+                  <span class="user-info__answer">Да</span>
+                </label>
+                <label class="user-info__label">
+                  <input type="radio" class="user-info__radio" name="isAgree">
+                  <span class="user-info__radiofake"></span>
+                  <span class="user-info__answer">Нет</span>
+                </label>
+              </div>
+
+              <div class="user-info__history">
+                <p class="user-info__history-title">История начислений и списаний</p>
+                <div class="user-info__history-box">
+                  <div class="user-info__history-row history-row history-row--header">
+                    <div class="history-row__item-date">
+                      <p class="history-row__title">Дата</p>
+                    </div>
+                    <div class="history-row__item-operation">
+                      <p class="history-row__title">Операция</p>
+                    </div>
+                    <div class="history-row__item-amount">
+                      <p class="history-row__title">Сумма операции</p>
+                    </div>
+                    <div class="history-row__item-before">
+                      <p class="history-row__title">Баланс до</p>
+                    </div>
+                    <div class="history-row__item-after">
+                      <p class="history-row__title">Баланс после</p>
+                    </div>
+                  </div>
+                  <div class="user-info__history-row history-row">
+                    <div class="history-row__item-date">
+                      15 июля, 2020
+                    </div>
+                    <div class="history-row__item-operation">
+                      Начисление бонусов при регистрации пользователя ID = 4281
+                    </div>
+                    <div class="history-row__item-amount">100</div>
+                    <div class="history-row__item-before">0</div>
+                    <div class="history-row__item-after">100</div>
+                  </div>
+                  <div class="user-info__history-row history-row history-row--colored">
+                    <div class="history-row__item-date">15 июля, 2020</div>
+                    <div class="history-row__item-operation">
+                      Начисление бонусов при регистрации пользователя ID = 4281
+                    </div>
+                    <div class="history-row__item-amount">100</div>
+                    <div class="history-row__item-before">100</div>
+                    <div class="history-row__item-after">200</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user-info__tab-content" id="content-2">
+              <span class="user-info__text">Текущий баланс</span>
+              <span class="user-info__price">1 206 руб.</span>
+              <div class="user-info__line">
+                <span class="user-info__text">Получать предупреждения о сгорании бонусов</span>
+                <label class="user-info__label">
+                  <input type="radio" class="user-info__radio" name="isAgree">
+                  <span class="user-info__radiofake"></span>
+                  <span class="user-info__answer">Да</span>
+                </label>
+                <label class="user-info__label">
+                  <input type="radio" class="user-info__radio" name="isAgree">
+                  <span class="user-info__radiofake"></span>
+                  <span class="user-info__answer">Нет</span>
+                </label>
+              </div>
+            </div>
+            <div class="user-info__tab-content" id="content-3">
+              <div class="user-info__history">
+                <p class="user-info__history-title">История начислений и списаний</p>
+                <div class="user-info__history-box">
+                  <div class="user-info__history-row history-row history-row--header">
+                    <div class="history-row__item-date">
+                      <p class="history-row__title">Дата</p>
+                    </div>
+                    <div class="history-row__item-operation">
+                      <p class="history-row__title">Операция</p>
+                    </div>
+                    <div class="history-row__item-amount">
+                      <p class="history-row__title">Сумма операции</p>
+                    </div>
+                    <div class="history-row__item-before">
+                      <p class="history-row__title">Баланс до</p>
+                    </div>
+                    <div class="history-row__item-after">
+                      <p class="history-row__title">Баланс после</p>
+                    </div>
+                  </div>
+                  <div class="user-info__history-row history-row">
+                    <div class="history-row__item-date">
+                      15 июля, 2020
+                    </div>
+                    <div class="history-row__item-operation">
+                      Начисление бонусов при регистрации пользователя ID = 4281
+                    </div>
+                    <div class="history-row__item-amount">100</div>
+                    <div class="history-row__item-before">0</div>
+                    <div class="history-row__item-after">100</div>
+                  </div>
+                  <div class="user-info__history-row history-row history-row--colored">
+                    <div class="history-row__item-date">15 июля, 2020</div>
+                    <div class="history-row__item-operation">
+                      Начисление бонусов при регистрации пользователя ID = 4281
+                    </div>
+                    <div class="history-row__item-amount">100</div>
+                    <div class="history-row__item-before">100</div>
+                    <div class="history-row__item-after">200</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user-info__tab-content" id="content-4">
+              <span class="user-info__text">Текущий баланс</span>
+              <span class="user-info__price">1 206 руб.</span>
+              <div class="user-info__line">
+                <span class="user-info__text">Получать предупреждения о сгорании бонусов</span>
+                <label class="user-info__label">
+                  <input type="radio" class="user-info__radio" name="isAgree">
+                  <span class="user-info__radiofake"></span>
+                  <span class="user-info__answer">Да</span>
+                </label>
+                <label class="user-info__label">
+                  <input type="radio" class="user-info__radio" name="isAgree">
+                  <span class="user-info__radiofake"></span>
+                  <span class="user-info__answer">Нет</span>
+                </label>
+              </div>
+            </div>
+            <div class="user-info__tab-content" id="content-5">
+              <div class="user-info__history">
+                <p class="user-info__history-title">История начислений и списаний</p>
+                <div class="user-info__history-box">
+                  <div class="user-info__history-row history-row history-row--header">
+                    <div class="history-row__item-date">
+                      <p class="history-row__title">Дата</p>
+                    </div>
+                    <div class="history-row__item-operation">
+                      <p class="history-row__title">Операция</p>
+                    </div>
+                    <div class="history-row__item-amount">
+                      <p class="history-row__title">Сумма операции</p>
+                    </div>
+                    <div class="history-row__item-before">
+                      <p class="history-row__title">Баланс до</p>
+                    </div>
+                    <div class="history-row__item-after">
+                      <p class="history-row__title">Баланс после</p>
+                    </div>
+                  </div>
+                  <div class="user-info__history-row history-row">
+                    <div class="history-row__item-date">
+                      15 июля, 2020
+                    </div>
+                    <div class="history-row__item-operation">
+                      Начисление бонусов при регистрации пользователя ID = 4281
+                    </div>
+                    <div class="history-row__item-amount">100</div>
+                    <div class="history-row__item-before">0</div>
+                    <div class="history-row__item-after">100</div>
+                  </div>
+                  <div class="user-info__history-row history-row history-row--colored">
+                    <div class="history-row__item-date">15 июля, 2020</div>
+                    <div class="history-row__item-operation">
+                      Начисление бонусов при регистрации пользователя ID = 4281
+                    </div>
+                    <div class="history-row__item-amount">100</div>
+                    <div class="history-row__item-before">100</div>
+                    <div class="history-row__item-after">200</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="user-info__tab-content" id="content-6">
+              <span class="user-info__text">Текущий баланс</span>
+              <span class="user-info__price">1 206 руб.</span>
+              <div class="user-info__line">
+                <span class="user-info__text">Получать предупреждения о сгорании бонусов</span>
+                <label class="user-info__label">
+                  <input type="radio" class="user-info__radio" name="isAgree">
+                  <span class="user-info__radiofake"></span>
+                  <span class="user-info__answer">Да</span>
+                </label>
+                <label class="user-info__label">
+                  <input type="radio" class="user-info__radio" name="isAgree">
+                  <span class="user-info__radiofake"></span>
+                  <span class="user-info__answer">Нет</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <img class="footer__logo" src="images/header-logo.svg" alt="">
+            <a class="footer__link footer__link-inst" href="#">Instagram</a>
+            <a class="footer__link footer__link-whatsapp" href="#">WhatsApp</a>
+            <a class="footer__link" href="tel:+796977752-">+7 (969) 777-52-00</a>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column-title">Клиентам</p>
+            <ul class="footer__column-list footer-list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">О магазине</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Политика</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Вопросы</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Оплата и доставка</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <p class="footer__column-title">Наши  адреса</p>
+            <div class="footer__column-box">
+
+              <div class="footer__column-item">
+                <p class="footer__column-text">г. Москва</p>
+                <p class="footer__column-text">пр-т Андропова, 22, </p>
+                <p class="footer__column-text">ТРЦ "Нора"</p>
+              </div>
+              <div class="footer__column-item">
+                <p class="footer__column-text">г. Егорьевск</p>
+                <p class="footer__column-text">ул. Советская, 121, </p>
+                <p class="footer__column-text">ТЦ "Егорьевский Пассаж"</p>
+              </div>
+              <div class="footer__column-item">
+                <p class="footer__column-text">г. Орехово-Зуево</p>
+                <p class="footer__column-text">ул. Ленина, 84,</p>
+                <p class="footer__column-text">ТЦ "Морозовский"</p>
+              </div>
+              <div class="footer__column-item">
+                <p class="footer__column-text">г. Куровское</p>
+                <p class="footer__column-text">ул. Вокзальная, 8, </p>
+                <p class="footer__column-text">ТЦ "Апельсин"</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer__column">
+            <form class="footer__form" action="">
+              <p class="footer__column-title">Подписаться на новости</p>
+              <div class="footer__form-inputwrapper">
+                <input class="footer__form-input" type="email" placeholder="Введите e-mail">
+                <button class="footer__form-btn" type="submit">
+                  <img class="footer__form-imgbtn" src="images/footer-imgbtn.svg" alt="">
+                </button>
+              </div>
+              <p class="footer__form-text">Подписываясь на рассылку, вы соглашаетесь с условиями Политики конфиденциальности</p>
+            </form>
+            <div class="footer__link-wrapper">
+              <a class="footer__link-share" href="#">Поделиться Вконтакте</a>
+            </div>
+            <div class="footer__link-wrapper">
+              <a class="footer__link-share" href="#">Поделиться в Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>  
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

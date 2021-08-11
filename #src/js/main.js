@@ -85,4 +85,16 @@ $('.category-aside__title').on('click', function(e) {
     $(this).parent().parent().parent().parent('.favorite__item').addClass('removed');
   })
 
+  $('.user-info__tab').on('click', function(e) {
+    e.preventDefault();
+    $(this).siblings().removeClass('active');
+    $(this).parent().siblings('.user-info__tab-content').removeClass('active');
+    $(this).toggleClass('active');
+    $($(this).attr('href')).addClass('active');
+  })
+
+  $('.basket__remove-btn').on('click', function() {
+    $(this).parent().parent().addClass('removed');
+  })
+
 });

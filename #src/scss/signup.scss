@@ -1,0 +1,43 @@
+
+
+.signup {
+
+  padding: 88px 0 79px;
+
+
+  // .signup__inner
+
+  &__inner {
+    max-width: 315px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  // .signup__title
+
+  &__title {
+    @extend %title;
+    margin-bottom: 50px;
+  }
+
+  // .signup__form
+
+  &__form {
+  }
+
+  // .signup__form-label
+
+  &__form-label {
+  }
+
+  // .signup__form-input
+
+  &__form-input {
+  }
+
+  // .signup__form-btn
+
+  &__form-btn {
+    padding: 12px 42px 9px;
+  }
+}

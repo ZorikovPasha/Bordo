@@ -110,74 +110,36 @@
     </header>
   
     <div class="main">
-      <div class="profile">
+      <div class="login">
         <div class="container">
-          <div class="profile__inner">
-            <div class="profile__top">
-              <h1 class="profile__title">Личный кабинет</h1>
-              <a class="profile__link" href="#">Выйти из аккаунта</a>
+          <div class="login__inner">
+            <h1 class="login__title">Авторизация</h1>
+            <form action="" class="login__form">
+              <p class="login__form-label form-label">Имя пользователя</p>
+              <input type="text" class="login__form-input form-input">
+              <p class="login__form-label form-label">Пароль</p>
+              <input type="password" class="login__form-input form-input">
+              <div class="login__link-wrapper">
+                <a href="restore-password.html" class="login__form-reminder">Забыли пароль?</a>
+              </div>
+              <button class="login__form-btn btn" type="submit">Войти</button>
+            </form>
+            <p class="login__text">или авторизоваться через</p>
+            <div class="login__socials">
+              <a href="#" class="login__socials-link">
+                <img src="images/fb.svg" alt="">
+              </a>
+              <a href="#" class="login__socials-link">
+                <img src="images/vk.svg" alt="">
+              </a>
+              <a href="#" class="login__socials-link">
+                <img src="images/google.svg" alt="">
+              </a>
             </div>
-            <div class="profile__items">
-
-              <div class="profile__item">
-                <div class="profile__item-info">
-                  <p class="profile__item-label">
-                    1 206
-                    <span>руб</span>
-                  </p>
-                  <p class="profile__item-text">Баланс бонусных баллов</p>
-                  <a class="profile__item-link" href="#">История начислений</a>
-                </div>
-                <img class="profile__item-img" src="images/profile-1.svg" alt="">
-              </div>
-              <div class="profile__item">
-                <div class="profile__item-info">
-                  <p class="profile__item-label">Текущие заказы</p>
-                  <p class="profile__item-text">В настоящий момент активных заказов: 5
-                  </p>
-                  <a class="profile__item-link" href="#">Список текущих заказов</a>
-                </div>
-                <img class="profile__item-img" src="images/profile-2.svg" alt="">
-
-
-              </div>
-              <div class="profile__item">
-                <div class="profile__item-info">
-                  <p class="profile__item-label">История заказов</p>
-                  <p class="profile__item-text">Вы совершили 13 заказов</p>
-                  <a class="profile__item-link" href="#">Подробнее</a>
-                </div>
-                <img class="profile__item-img" src="images/profile-3.svg" alt="">
-
-
-              </div>
-              <div class="profile__item">
-                <div class="profile__item-info">
-                  <p class="profile__item-label">Корзина</p>
-                  <p class="profile__item-text">В корзине 5 товаров на сумму 18 000 руб.</p>
-                  <a class="profile__item-link" href="#">Подробнее</a>
-                </div>
-                <img class="profile__item-img" src="images/profile-4.svg" alt="">
-
-
-              </div>
-              <div class="profile__item">
-                <div class="profile__item-info">
-                  <p class="profile__item-label">Подписки</p>
-                  <p class="profile__item-text">Измените настройки уведомлений</p>
-                  <a class="profile__item-link" href="#">Подробнее</a>
-                </div>
-                <img class="profile__item-img" src="images/profile-5.svg" alt="">
-
-              </div>
-              <div class="profile__item">
-                <div class="profile__item-info">
-                  <p class="profile__item-label">Личные данные</p>
-                  <a class="profile__item-link" href="#">Настроить</a>
-                </div>
-                <img class="profile__item-img" src="images/profile-6.svg" alt="">
-              </div>
-            </div>
+          </div>
+          <div class="login__bottom">
+            <span class="login__new">Новый пользователь?</span>
+            <a class="login__new-link" href="signup.html">Создать учетную запись</a>
           </div>
         </div>
       </div>
