@@ -1,0 +1,92 @@
+.catalogue-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+}
+
+.catalogue-aside {
+
+  max-width: 222px;
+
+  // .catalogue-aside__title
+
+  &__title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 55px;
+    font-weight: 400;
+    font-family: 'ALSAlumnaRegular';
+  }
+
+  // .catalogue-aside__list
+
+  &__list {
+  }
+
+  // .catalogue-aside__item
+
+  &__item {
+  }
+
+  // .catalogue-aside__link
+
+  &__link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #858585;
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &__item + &__item {
+    margin-top: 25px;
+  }
+}
+.catalogue-body {
+  max-width: 824px;
+}
+
+.catalogue {
+
+  // .catalogue__banner
+
+  &__banner {
+    background-image: url('../images/banner-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 367px;
+    position: relative;
+    margin-bottom: 46px;
+  }
+
+  &__banner-body {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+  }
+
+  // .catalogue__banner-title
+
+  &__banner-title {
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    max-width: 596px;
+    margin: 0 auto 25px;
+    font-weight: 400;
+    font-family: 'ALSAlumnaRegular';
+  }
+
+  // .catalogue__banner-btn
+
+  &__banner-btn {
+    padding: 12px 49px 9px;
+  }
+}
+

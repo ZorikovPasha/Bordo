@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'ALSAlumnaRegular';
+  src: url('../fonts/ALS\ Alumna\ Regular.woff2') format('woff2'),
+  url('../fonts/ALS\ Alumna\ Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+%h1 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  font-family: 'ALSAlumnaRegular';
+}

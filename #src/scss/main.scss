@@ -1,0 +1,193 @@
+
+.main-top {
+
+  margin-bottom: 40px;
+
+  // .main-top__slider
+
+  &__slider {
+  }
+
+  // .main-top__slider-item
+
+  &__slider-item {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 110px);
+    min-height: 320px;
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 982px;
+    width: 100%;
+    z-index: 4;
+
+  }
+
+  // .main-top__title
+
+  &__title {
+    font-family: 'ALSAlumnaRegular';
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 71px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  // .main-top__subtitle
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+}
+
+
+.main-top__slider {
+
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    text-align: center;
+    li {
+      margin: 0 5px;
+      display: inline-block;
+    }
+  }
+  .slick-dots button{
+    padding: 0;
+    margin: 0;
+    border:none;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    transition: all .4s;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%; 
+    background-color: #fff;
+  }
+  .slick-dots li.slick-active button {
+    width: 37px;
+    height: 7px;
+    background: rgba(#FFFFFF, .4);
+    border-radius: 4px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 7px;
+      background: #FFFFFF;
+      width: 21px;
+      border-radius: 4px;
+    }
+  }
+  
+
+}
+
+
+.banner {
+
+  margin-bottom: 40px;
+
+  // .banner__inner
+
+  &__inner {
+    background-image: url('../images/banner-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 465px;
+    position: relative;
+  }
+
+  &__content {
+    text-align: center;
+    max-width: 1026px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+  }
+
+  // .banner__title
+
+  &__title {
+    font-size: 50px;
+    line-height: 50px;
+    font-family: 'ALSAlumnaRegular';
+    color: #FFFFFF;
+    margin-bottom: 18px;
+  }
+
+  // .banner__subtitle
+
+  &__subtitle {
+    font-size: 16px;
+    margin-bottom: 22px;
+    color: #FFFFFF;
+  }
+
+  // .banner__btn
+
+  &__btn {
+    padding: 12px 49px 9px;
+  }
+}
+
+
+
+.main-choice {
+
+  padding: 100px 0 150px;
+
+  // .main-choice__items
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .main-choice__item
+
+  &__item {
+    text-align: center;
+    opacity: 1;
+    transition: all .3s;
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  // .main-choice__img
+
+  &__img {
+    margin-bottom: 38px;
+  }
+
+  // .main-choice__name
+
+  &__name {
+    font-family: 'ALSAlumnaRegular';
+    font-size: 50px;
+    line-height: 50px;
+  }
+}

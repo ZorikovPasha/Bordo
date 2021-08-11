@@ -1,0 +1,257 @@
+@import "_vars.scss";
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*, 
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+body {
+	min-width: 320px;
+  overflow-x: hidden;
+  height: 100%;
+  font-family: 'STIX Two Text', serif;
+  color: #000;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+
+button {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.btn {
+  color: #fff;
+  background: #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.input {
+  background: #FBFBFB;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.page-section {
+
+  padding-bottom: 50px;
+
+  // .page-section__inner
+
+  &__inner {
+  }
+
+  // .page-section__top
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 35px;
+  }
+
+  // .page-section__name
+
+  &__name {
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  // .page-section__link
+
+  &__link {
+    font-size: 14px;
+    line-height: 21px;
+    color: #858585;
+    padding-right: 18px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      right: 4px;
+      top: 4px;
+      width: 7px;
+      height: 12px;
+      background-image: url('../images/arr-right.svg');
+    }
+  }
+
+  // .page-section__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: 255px 255px 255px 255px;
+    // grid-template-columns: minmax(1fr, 255px) minmax(1fr, 255px) minmax(1fr, 255px) minmax(1fr, 255px);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+  }
+
+  // .page-section__item
+
+  &__item {
+    text-align: center;
+    position: relative;
+    opacity: 1;
+    transform: translate(0%, 0%);
+    transition: all .3s;
+    &:hover {
+      opacity: .9;
+      transform: translate(0%, -2px);
+      
+    }
+  }
+
+  &__imglink {
+  }
+
+  &__images {
+    margin-bottom: 18px;
+    height: 281px;
+  }
+
+  // .page-section__img
+
+  &__img {
+    max-width: 255px;
+    max-height: 281px;
+    object-fit: cover;
+    margin-bottom: 4px;
+  }
+
+  // .page-section__text
+
+  &__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+
+  // .page-section__price
+
+  &__price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+
+  &__colors {
+    text-align: center;
+    span {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    span + span {
+      margin-left: 11px;
+    }
+  }
+}
+
+.page-section__items.page-section__items-narrow {
+  display: grid;
+  grid-template-columns: 255px 255px 255px;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+
+.page-section--last {
+  padding-bottom: 82px;
+}
+
+.color-ECECEC {
+  background-color: #ECECEC;
+}
+.color-1D1D1D {
+  background-color: #1D1D1D;
+
+}
+.color-3A814E {
+  background-color: #3A814E;
+
+}
+.color-6B46B9 {
+  background-color: #6B46B9;
+
+}
+.color-E63838 {
+  background-color: #E63838;
+
+}
+.color-F0E9AA {
+  background-color: #F0E9AA;
+
+}
+.color-E17614 {
+  background-color: #E17614;
+
+}
+.color-0C98C4 {
+  background-color: #0C98C4;
+
+}
+.color-F9D311 {
+  background-color: #F9D311;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

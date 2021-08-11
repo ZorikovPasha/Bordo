@@ -1,0 +1,222 @@
+
+.header {
+
+  // .header__top
+
+  &__top {
+    background: #FBFBFB;
+
+    a {
+      transition: all .3s;
+    }
+    a:hover {
+      color: #000;
+    }
+  }
+
+  // .header__top-inner
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+  }
+
+  // .header__top-nav
+
+  &__top-nav {
+  }
+
+  // .header__top-list
+
+  &__top-list {
+  }
+
+  // .header__top-contacts
+
+  &__top-contacts {
+  }
+
+  // .header__top-contactslist
+
+  &__top-contactslist {
+  }
+
+  // .header__bottom
+
+  &__bottom {
+    a {
+      opacity: 1;
+      transition: all .3s;
+    }
+    a:hover {
+      opacity: .7;
+    }
+  }
+
+  // .header__bottom-inner
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+  }
+
+  // .header__bottom-nav
+
+  &__bottom-nav {
+  }
+
+  // .header__bottom-list
+
+  &__bottom-list {
+  }
+
+  // .header__logo
+
+  &__logo {
+    margin-left: -10%;
+  }
+
+  // .header__logo-img
+
+  &__logo-img {
+  }
+
+  // .header__user-nav
+
+  &__user-nav {
+  }
+}
+
+.top-list {
+
+  // .top-list__item
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__item + .top-list__item {
+    margin-left: 25px;
+  }
+
+  // .top-list__link
+
+  &__link {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    color: #969696;
+  }
+}
+.top-contacts {
+
+  // .top-contacts__list
+
+  &__list {
+  }
+
+  // .top-contacts__list-item
+
+  &__list-item {
+    display: inline-block;
+  }
+
+  &__list-item + &__list-item {
+    margin-left: 25px;
+  }
+
+  // .top-contacts__list-link
+
+  &__list-link {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    color: #969696;
+  }
+
+  &__list-viber {
+    padding-left: 18px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      top: 0px;
+      left: 0;
+      background-image: url('../images/viber-icon.svg')
+
+    }
+  }
+
+  &__list-inst {
+    padding-left: 18px;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      top: 0px;
+      left: 0;
+      background-image: url('../images/inst-icon.svg')
+
+    }
+  }
+}
+.bottom-list {
+
+  // .bottom-list__item
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__item + &__item {
+    margin-left: 35px;
+  }
+
+  // .bottom-list__link
+
+  &__link {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+.user-nav {
+
+  // .user-nav__list
+
+  &__list {
+  }
+
+  // .user-nav__item
+
+  &__item {
+    display: inline-block;
+  }
+
+  &__item + &__item {
+    margin-left: 46px;
+  }
+
+  // .user-nav__link
+
+  &__link {
+    &:hover img{
+      opacity: .8;
+    }
+  }
+
+  // .user-nav__img
+
+  &__img {
+    opacity: 1;
+    transition: all .3s;
+
+  }
+}
