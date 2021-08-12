@@ -16,7 +16,7 @@
   // .signup__title
 
   &__title {
-    @extend %title;
+    @extend %h1;
     margin-bottom: 50px;
   }
 
@@ -39,5 +39,12 @@
 
   &__form-btn {
     padding: 12px 42px 9px;
+  }
+}
+
+
+@media (max-width:540px) {
+  .signup {
+    padding: 30px 0 45px;  
   }
 }

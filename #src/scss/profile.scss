@@ -108,3 +108,47 @@
     margin-top: auto;
   }
 }
+
+
+@media (max-width:1110px) {
+  .profile__items {
+    grid-template-columns: repeat(2, minmax(auto, 48%));
+    grid-template-rows: repeat(3, minmax(154px, 1fr));
+    grid-gap: 15px;
+  }
+}
+
+@media (max-width:767px) {
+  .profile__item-link {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .profile__item-label {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .profile__item-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media (max-width:640px) {
+  .profile__top {
+    display: block;
+    text-align: center;
+  }
+  .profile__link {
+    display: inline-block;
+    margin-left: 0px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .profile__items {
+    max-width: 300px;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, minmax(auto, 99%));
+    grid-template-rows: repeat(6, minmax(154px, 1fr));
+  }
+}

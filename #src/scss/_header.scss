@@ -62,11 +62,18 @@
     justify-content: space-between;
     align-items: center;
     height: 75px;
+
+    .top-contacts__list {
+      display: none;
+    }
   }
 
   // .header__bottom-nav
 
   &__bottom-nav {
+    .top-list {
+      display: none;
+    }
   }
 
   // .header__bottom-list
@@ -77,7 +84,10 @@
   // .header__logo
 
   &__logo {
-    margin-left: -10%;
+    position: absolute;
+    top: 53px;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   // .header__logo-img
@@ -217,6 +227,190 @@
   &__img {
     opacity: 1;
     transition: all .3s;
+  }
+}
 
+.menu-btn {
+  z-index: 10;
+}
+
+@media (max-width:992px) {
+  .top-list__link,
+  .bottom-list__link,
+  .top-contacts__list-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .top-list__item+.top-list__item {
+    margin-left: 15px;
+  }
+  .bottom-list__item+.bottom-list__item {
+    margin-left: 10px;
+  }
+  .top-contacts__list-item+.top-contacts__list-item {
+    margin-left: 10px;
+  }
+  .user-nav__item+.user-nav__item {
+    margin-left: 18px;
+  }
+
+  .top-contacts__list-inst,
+  .top-contacts__list-viber {
+    font-size: 0px;
+    line-height: 0px;
+  }
+  .top-contacts__list-inst:after,
+  .top-contacts__list-viber:after {
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    top: -9px;
+  }
+}
+
+@media (max-width:900px) {
+  .top-list {
+    display: none;
+  }
+  .header__bottom-inner {
+    justify-content: flex-end;
+  }
+  .header__bottom-nav {
+    padding: 80px 20px 80px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    width: 300px;
+    background-color: #738CA4;
+    min-height: 100%;
+    height: 100vh;
+    transform: translate(-170%, 0);
+    transition: all .3s;
+    overflow: auto;
+    &.active {
+      transform: translate(0, 0);
+    }
+    .top-list {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 30px;
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 150px;
+        margin: 0 auto;
+        height: 1px;
+        background-color: #000;
+      }  
+    }
+  }
+  .bottom-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-list__item +.top-list__item {
+    margin-left: 0px;
+  }
+  .bottom-list__item +.bottom-list__item {
+    margin-left: 0px;
+  }
+  .top-list__item,
+  .bottom-list__item {
+    margin-bottom: 20px;
+    a {
+      font-size: 18px;
+      line-height: 24px;
+      color: #000;
+    }
+  }
+  .menu-btn {
+    display: block;
+  }
+  body.lock {
+    overflow: hidden;
+  }
+}
+
+@media (max-width:500px) {
+  .header__bottom-nav {
+    width: 100%;
+  }
+  .header__top {
+    display: none;
+  }
+  .top-contacts__list-inst,
+  .top-contacts__list-viber {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .top-contacts__list-item + .top-contacts__list-item {
+    margin-left: 0px;
+  }
+  .top-contacts__list {
+    flex-direction: column;
+  }
+  .top-contacts__list-item {
+    display: block;
+    margin-bottom: 20px;
+    a {
+      color: #000;
+    }
+  }
+  .top-contacts__list-inst,
+  .top-contacts__list-viber {
+    padding-left: 0;
+  }
+
+  .top-contacts__list-inst:after,
+  .top-contacts__list-viber:after {
+    display: none;
+  }
+  .header__logo {
+    top: 24px;
+    img {
+      width: 58px;
+      height: 27px;
+      object-fit: contain;
+    }
+  }
+
+  .bottom-list {
+    position: relative;
+    margin-bottom: 30px;
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 150px;
+      margin: 0 auto;
+      height: 1px;
+      background-color: #000;
+    }  
+  }
+  .user-nav__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80px;
+  }
+  .user-nav__item {
+    text-align: center;
+  }
+  .user-nav__item+.user-nav__item {
+    margin-left: 0px;
+  }
+  .header__bottom-inner {
+    .top-contacts__list {
+      display: flex;
+    }
   }
 }

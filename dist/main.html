@@ -58,10 +58,30 @@
           </div>
         </div>  
       </div>
+      <button class="menu-btn">
+        <div class="menu-btn__line"></div>
+        <div class="menu-btn__line"></div>
+        <div class="menu-btn__line"></div>
+      </button>
       <div class="header__bottom">
         <div class="container">
           <div class="header__bottom-inner">
             <nav class="header__bottom-nav">
+              <ul class="header__top-list top-list">
+                <li class="top-list__item">
+                  <a class="top-list__link" href="about.html">О магазине</a>
+                </li>
+                <li class="top-list__item">
+                  <a class="top-list__link" href="#">Политика</a>
+                </li>
+                <li class="top-list__item">
+                  <a class="top-list__link" href="#">Вопросы</a>
+                </li>
+                <li class="top-list__item">
+                  <a class="top-list__link" href="delivery.html">Оплата и доставка</a>
+                </li>
+              </ul>
+
               <ul class="header__bottom-list bottom-list">
                 <li class="bottom-list__item">
                   <a class="bottom-list__link" href="catalogue.html">Новинки</a>
@@ -76,6 +96,22 @@
                   <a class="bottom-list__link" href="#">Покупателям</a>
                 </li>
               </ul>
+
+              <ul class="header__top-contactslist top-contacts__list">
+                <li class="top-contacts__list-item">
+                  <a class="top-contacts__list-link top-contacts__list-inst" href="#">Instagram</a>
+                </li>
+                <li class="top-contacts__list-item">
+                  <a class="top-contacts__list-link top-contacts__list-viber" href="#">WhatsApp</a>
+                </li>
+                <li class="top-contacts__list-item">
+                  <a class="top-contacts__list-link" href="tel:+79697775200">+7 (969) 777-52-00</a>
+                </li>
+                <li class="top-contacts__list-item">
+                  <a class="top-contacts__list-link" href="#">Адреса шоурумов</a>
+                </li>
+              </ul>
+
             </nav>
             <a  class="header__logo" href="#">
               <img class="header__logo-img" src="images/header-logo.svg" alt="">
@@ -111,7 +147,6 @@
         </div>
       </div>
     </header>
-  
     <div class="main">
 
       <div class="main-top">
@@ -160,7 +195,6 @@
           </div>
         </div>
       </div>
-
       <section class="page-section">
         <div class="container">
           <div class="page-section__inner">
@@ -172,8 +206,10 @@
 
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img class="page-section__img" src="images/sale/1.jpg" alt="">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/sale/1.jpg" alt="">
+                  </div>
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="page-section__color color-ECECEC"></span>
@@ -185,8 +221,11 @@
 
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img class="page-section__img" src="images/sale/2.jpg" alt="">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/sale/2.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="page-section__color color-6B46B9"></span>
@@ -198,8 +237,11 @@
 
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img class="page-section__img" src="images/sale/3.jpg" alt="">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/sale/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="page-section__color color-E17614"></span>
@@ -211,8 +253,11 @@
 
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img class="page-section__img" src="images/sale/4.jpg" alt="">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/sale/4.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="page-section__color color-ECECEC"></span>
@@ -221,7 +266,6 @@
                   </div>
                 </a>
               </div>
-
             </div>
           </div>
         </div>
@@ -235,10 +279,13 @@
               <a class="page-section__link" href="category.html">Все товары</a>
             </div>
             <div class="page-section__items">
+
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/new/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/new/1.jpg" alt="">
+                  </div>
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -249,8 +296,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/new/2.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/new/2.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-6B46B9"></span>
@@ -261,8 +311,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/new/3.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/new/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-E17614"></span>
@@ -273,8 +326,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/new/4.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/new/4.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -290,12 +346,12 @@
       </section>
 
       <section class="banner">
-        <div class="container">
+        <div class="container-fluid">
           <div class="banner__inner">
             <div class="banner__content">
               <h2 class="banner__title">Скидка до - 30% на всю верхнюю одежду</h2>
               <p class="banner__subtitle">Сделай свой первый заказ прямо сегодня и получи скидку 200 рублей на 1-ую покупку</p>
-              <a class="banner__btn btn" href="#"> К покупкам</a>  
+              <a class="banner__btn btn" href="catalogue.html"> К покупкам</a>  
             </div>
           </div>
         </div>
@@ -311,8 +367,11 @@
             <div class="page-section__items">
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/jempers/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/jempers/1.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -323,8 +382,10 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/jempers/2.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/jempers/2.jpg" alt="">
+                  </div>
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-6B46B9"></span>
@@ -335,8 +396,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/jempers/3.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/jempers/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-E17614"></span>
@@ -347,8 +411,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/jempers/4.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/jempers/4.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -373,8 +440,11 @@
             <div class="page-section__items">
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/accessouries/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/Accessouries/1.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -385,8 +455,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/accessouries/2.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/Accessouries/2.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-6B46B9"></span>
@@ -398,8 +471,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/accessouries/3.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/Accessouries/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-E17614"></span>
@@ -411,8 +487,10 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/accessouries/4.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/Accessouries/4.jpg" alt="">
+                  </div>
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -437,8 +515,11 @@
             <div class="page-section__items">
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/dress/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/dress/1.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -450,8 +531,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/dress/2.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/dress/2.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-6B46B9"></span>
@@ -463,8 +547,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/dress/3.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/dress/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-E17614"></span>
@@ -476,8 +563,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/dress/4.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/dress/4.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -502,8 +592,11 @@
             <div class="page-section__items">
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/shorts/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/shorts/1.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -515,8 +608,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/shorts/2.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/shorts/2.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-6B46B9"></span>
@@ -528,8 +624,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/shorts/3.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/shorts/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-E17614"></span>
@@ -541,8 +640,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/shorts/4.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/shorts/4.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -561,15 +663,23 @@
         <div class="container">
           <div class="main-choice__items">
             <a class="main-choice__item" href="category.html">
-              <img class="main-choice__img" src="images/choice-1.jpg" alt="">
+              <div class="main-choice__img-wrapper">
+                <img class="main-choice__img" src="images/choice-1.jpg" alt="">
+              </div>
               <p class="main-choice__name">Аксессуары</p>
             </a>
+
             <a class="main-choice__item" href="category.html">
-              <img class="main-choice__img" src="images/choice-2.jpg" alt="">
+              <div class="main-choice__img-wrapper">
+                <img class="main-choice__img" src="images/choice-2.jpg" alt="">
+              </div>
               <p class="main-choice__name">Платья</p>
             </a>
+
             <a class="main-choice__item" href="category.html">
-              <img class="main-choice__img" src="images/choice-3.jpg" alt="">
+              <div class="main-choice__img-wrapper">
+                <img class="main-choice__img" src="images/choice-3.jpg" alt="">
+              </div>
               <p class="main-choice__name">Блузки</p>
             </a>
           </div>
@@ -586,8 +696,11 @@
             <div class="page-section__items">
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/shirts/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/shirts/1.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -598,8 +711,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/shirts/2.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/shirts/2.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-6B46B9"></span>
@@ -611,8 +727,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/shirts/3.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/shirts/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-E17614"></span>
@@ -624,8 +743,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/shirts/4.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/shirts/4.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -650,8 +772,11 @@
             <div class="page-section__items">
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/swimwear/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/swimwear/1.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -663,8 +788,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/swimwear/2.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/swimwear/2.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-6B46B9"></span>
@@ -676,8 +804,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/swimwear/3.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/swimwear/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-E17614"></span>
@@ -689,8 +820,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/swimwear/4.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/swimwear/4.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -715,8 +849,11 @@
             <div class="page-section__items">
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/coats/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/coats/1.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -727,8 +864,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/coats/2.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/coats/2.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-6B46B9"></span>
@@ -739,8 +879,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/coats/3.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/coats/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-E17614"></span>
@@ -751,8 +894,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/coats/4.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/coats/4.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -776,8 +922,11 @@
             <div class="page-section__items">
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/jackets/1.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/jackets/1.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -788,8 +937,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/jackets/2.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/jackets/2.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-6B46B9"></span>
@@ -800,8 +952,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/jackets/3.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/jackets/3.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-E17614"></span>
@@ -812,8 +967,11 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/jackets/4.jpg" alt="" class="page-section__img">
-                  <a class="page-section__text" href="#">Футболка удлиненная</a>
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/jackets/4.jpg" alt="">
+                  </div>
+
+                  <p class="page-section__text">Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
                     <span class="color-ECECEC"></span>
@@ -837,7 +995,10 @@
             <div class="page-section__items">
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/costumes/1.jpg" alt="" class="page-section__img">
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/costumes/1.jpg" alt="">
+                  </div>
+
                   <p class="page-section__text" >Футболка удлиненная</p>
                   <p class="page-section__price">560 ₽</p>
                   <div class="page-section__colors">
@@ -849,7 +1010,10 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/costumes/2.jpg" alt="" class="page-section__img">
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/costumes/2.jpg" alt="">
+                  </div>
+
                   <p class="page-section__text" >Футболка удлиненная</p>
                   <p class="page-section__price">600 ₽</p>
                   <div class="page-section__colors">
@@ -861,7 +1025,10 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/costumes/3.jpg" alt="" class="page-section__img">
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/costumes/3.jpg" alt="">
+                  </div>
+
                   <p class="page-section__text" >Футболка удлиненная</p>
                   <p class="page-section__price">420 ₽</p>
                   <div class="page-section__colors">
@@ -874,7 +1041,10 @@
               </div>
               <div class="page-section__item">
                 <a href="product-card.html">
-                  <img src="images/costumes/4.jpg" alt="" class="page-section__img">
+                  <div class="page-section__imgwrapper">
+                    <img class="page-section__img" src="images/costumes/4.jpg" alt="">
+                  </div>
+
                   <p class="page-section__text" >Футболка удлиненная</p>
                   <p class="page-section__price">780 ₽</p>
                   <div class="page-section__colors">
@@ -890,7 +1060,7 @@
       </section>
 
     </div>
-  
+
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -917,7 +1087,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__column">
+          <div class="footer__column footer__column--addresses">
             <p class="footer__column-title">Наши  адреса</p>
             <div class="footer__column-box">
 

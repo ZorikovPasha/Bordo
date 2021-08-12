@@ -12,10 +12,14 @@
   font-size: 30px;
   line-height: 30px;
   font-family: 'ALSAlumnaRegular';
+  @media (max-width:992px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 %title {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   font-family: 'ALSAlumnaRegular';

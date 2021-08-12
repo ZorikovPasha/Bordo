@@ -51,7 +51,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 46px;
+      min-height: 46px;
       background: #FBFBFB;
       margin-bottom: 40px;
 		}
@@ -176,7 +176,7 @@
 
 		&__history-box {
       .history-row:not(.history-row--header) {
-        height: 91px;
+        min-height: 91px;
       }
 		}
 
@@ -204,7 +204,7 @@
 
 		&__item-date {
       width: 18.2%;
-      padding-right: 40px;
+      padding-right: 15px;
 		}
 
 		// .history-row__title
@@ -222,26 +222,111 @@
 		&__item-operation {
       width: 37.6%;
       padding-right: 165px;
+      // max-width: 280px;
 		}
 
 		// .history-row__item-amount
 
 		&__item-amount {
       width: 18.5%;
-      padding-right: 40px;
+      padding-right: 20px;
 		}
 
 		// .history-row__item-before
 
 		&__item-before {
       width: 13.7%;
-      padding-right: 40px;
+      padding-right: 20px;
 		}
 
 		// .history-row__item-after
 
 		&__item-after {
       width: 14.86%;
-      padding-right: 40px;
+      padding-right: 20px;
 		}
+}
+
+@media (max-width:1120px) {
+  .user-info__tabs{ 
+    padding: 0;
+  }
+  .history-row__item-operation {
+    width: 26%;
+    padding-right: 40px;
+  }
+  .history-row {
+    padding: 0 5px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width:767px) {
+  .history-row__title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .user-info__tab {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .user-info__text,
+  .user-info__price {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .user-info__tabs {
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding: 0 5px;
+  }
+  .user-info__tab {
+    width: 30%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width:660px) {
+  .history-row__title {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .history-row__item-date {
+    width: 10%;
+  }
+  .history-row__item-date,
+  .history-row__item-operation,
+  .history-row__item-amount,
+  .history-row__item-before,
+  .history-row__item-after {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
+@media (max-width:550px) {
+  .user-info__line {
+    flex-wrap: wrap;
+    .user-info__text {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  .user-info__top {
+    flex-wrap: wrap;
+  }
+  .user-info__title {
+    width: 100%;
+  }
+  .user-info__link {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width:420px) {
+  .user-info__tab {
+    width: 48%;
+    margin: 10px 0;
+  }
 }
