@@ -3,6 +3,11 @@
 
   margin-bottom: 40px;
 
+  &__container {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
   // .main-top__slider
 
   &__slider {
@@ -98,8 +103,6 @@
       border-radius: 4px;
     }
   }
-  
-
 }
 
 

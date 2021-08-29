@@ -40,10 +40,11 @@
 		// .category-aside__title
 
 		&__title {
+      position: relative;
       font-size: 16px;
       line-height: 24px;
-      position: relative;
       margin-bottom: 20px;
+      cursor: pointer;
       &::after{
         content: "";
         position: absolute;
@@ -51,7 +52,6 @@
         right: 5px;
         width: 7px;
         height: 12px;
-        cursor: pointer;
         transform: rotate(90deg);
         transition: all .3s;
         background-image: url('../images/arr-right.svg');
