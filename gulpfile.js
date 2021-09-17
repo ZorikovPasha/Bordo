@@ -76,8 +76,9 @@ gulp.task('refreshHtml', function() {
 
 gulp.task('refreshJs', function() {
   return gulp.src('#src/js/*.js')
+    .pipe(concat('main.min.js'))
     .pipe(uglify())
-    .pipe(rename({suffix: ".min"}))
+    // .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.reload( {stream: true} ))
 });

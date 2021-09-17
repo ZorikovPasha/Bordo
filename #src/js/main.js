@@ -1,63 +1,16 @@
 $(function(){
   
-  $('.main-top__slider').slick({
-    fade: true,
-    dots: true,
-    arrows: false,
-    // autoplay: 3000,
-  });
-
-
   $('.menu-btn').on('click', function() {
     $('.menu').toggleClass('menu--active'); 
   })
 
-  $('.category-aside__title').on('click', function(e) {
-    $(this).toggleClass('rollup');
-    $(this).siblings('.category-aside__list').toggleClass('closed');
+  $('.menu-btn').on('click', function(e) {
+    $('.menu-btn').toggleClass('active');
+    $('.header__bottom-nav').toggleClass('active');
+    $('.wrapper').toggleClass('covered');
+    $('body').toggleClass('lock');
   })
 
-  // слайдер мелких картинок. Связан со слайдером больших картинок
-
-  $('.product-card__images').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.product-card__imgslider',
-    arrows: false,
-    vertical: true,
-    focusOnSelect: true,
-    initialSlide: 0,
-  })
-
-  // слайдер больших картинок. 
-
-  $('.product-card__imgslider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    asNavFor: '.product-card__images',
-    fade: true,
-  });
-
-  // большой слайдер. Соединяет в себе слайдер маленьких картинок и больших картинок.
-  // связан со  слайдером точек цветов.
-
-  $('.product-card__slider').slick({
-    fade: true,
-    arrows: false,
-    asNavFor: '.product-card__colors-slider',
-    swipe: false,
-  });
-
-  // слайдер точек цвета
-
-  $('.product-card__colors-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false,
-    asNavFor: '.product-card__slider',
-    focusOnSelect: true,
-  });
 
   $('.product-card__color').on('click', function(e) {
     e.preventDefault();
@@ -72,37 +25,6 @@ $(function(){
     $(this).toggleClass('active');
   })
 
-  $('.basket__quantity').each(function() {
-    var spinner = $(this),
-      input = spinner.find('input[type="number"]'),
-      btnUp = spinner.find('.basket__quantity-plus'),
-      btnDown = spinner.find('.basket__quantity-minus'),
-      min = input.attr('min'),
-      max = input.attr('max');
-
-    btnUp.click(function() {
-      var oldValue = parseFloat(input.val());
-      if (oldValue >= max) {
-        var newVal = oldValue;
-      } else {
-        var newVal = oldValue + 1;
-      }
-      spinner.find("input").val(newVal);
-      spinner.find("input").trigger("change");
-    });
-
-    btnDown.click(function() {
-      var oldValue = parseFloat(input.val());
-      if (oldValue <= min) {
-        var newVal = oldValue;
-      } else {
-        var newVal = oldValue - 1;
-      }
-      spinner.find("input").val(newVal);
-      spinner.find("input").trigger("change");
-    });
-
-  });
 
   $('.filter-style').styler();
 
@@ -120,51 +42,6 @@ $(function(){
 
   $('.basket__remove-btn').on('click', function() {
     $(this).parent().parent().addClass('removed');
-  })
-
-  $('.menu-btn').on('click', function(e) {
-    $('.menu-btn').toggleClass('active');
-    $('.header__bottom-nav').toggleClass('active');
-    $('body').toggleClass('lock');
-  })
-
-  $('.catalogue-btn').on('click', function() {
-    $('.catalogue-btn').toggleClass('active');
-    $('.catalogue-aside').toggleClass('active');
-    // $('body').toggleClass('lock');
-  })
-
-  $('.category-btn').on('click', function() {
-    $('.category-btn').toggleClass('active');
-    $('.category-aside').toggleClass('active');
-/*    if ( $('body').hasClass('lock') & ( $(this).hasClass('active') ) ) {
-
-    }*/
-  })
-
-
-  $('.page-section__items').slick({
-    mobileFirst: true,
-    slidesToShow: 1,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 430,
-        settings: 'unslick'
-      }
-    ]
-  })
-
-  $('.page-section__items-narrow').slick({
-    mobileFirst: true,
-    slidesToShow: 1,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 630,
-        settings: 'unslick'
-      }
-    ]
   })
 
 });

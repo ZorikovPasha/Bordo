@@ -2,13 +2,17 @@
   display: flex;
   justify-content: space-between;
   padding-top: 90px;
-  position: relative;
 }
 
 .catalogue-aside {
 
-  max-width: 222px;
-  width: 100%;
+
+  &__body {
+    
+    max-width: 222px;
+    width: 100%;
+  
+  }
 
   // .catalogue-aside__title
 
@@ -47,8 +51,7 @@
   }
 }
 .catalogue-body {
-  max-width: 824px;
-  width: 100%;
+  width: calc(100% - 222px);
   position: relative;
 
 }
@@ -104,6 +107,28 @@
 
 .catalogue-btn {
   z-index: 6;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  display: none;
+
+  & div {
+    width: 45px;
+    height: 4px;
+    background-color: rgba(#000, .6);
+    border-radius: 2px;
+
+    &:first-child {
+      width: 30px;
+    }
+    &:last-child {
+      width: 23px;
+    }
+  }
+
+  div + div {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width:1300px) {
@@ -122,19 +147,30 @@
     line-height: 26px;
   }
   .catalogue-aside {
-    position: absolute;
-    top: 40px;
-    left: -15px;
-    width: 260px;
-    // bottom: 0;
-    // height: 100%;
-    background: #ECECEC;
-    z-index: 5;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    
+    display: none;
+    overflow: auto;
+    background-color: rgba(#000, .4);
+
+    &.shown {
+      display: block;
+    }
+  }
+  .catalogue-aside__body {
     padding: 60px 15px;
-    transform: translate(-180%, 0);
+    transform: translate(-150%, 0);
     transition: all .3s;
+    overflow: auto;
     box-shadow: -2px 3px 17px 0px #000;
-    &.active {
+    background: #ECECEC;
+
+    &.opened {
       transform: translate(0, 0);
     }
   }
@@ -144,7 +180,7 @@
     line-height: 16px;
   }
   .catalogue-body {
-    max-width: 100%;
+    width: 100%;
   }
   .catalogue-btn {
     display: block;
