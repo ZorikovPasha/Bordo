@@ -1,5 +1,6 @@
 
 $('.category-btn').on('click', function(e) {
+
   $('.wrapper').addClass('covered')
   $('body').addClass('lock');
 

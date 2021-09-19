@@ -241,10 +241,7 @@
     line-height: 44px;
     margin-bottom: 20px;
   }
-  .main-top__subtitle {
-    font-size: 15px;
-    line-height: 15px;
-  }
+
   .banner__title {
     font-size: 36px;
     line-height: 36px;
@@ -268,6 +265,12 @@
   }
   .main-choice__img-wrapper {
     padding-top: 60%;
+  }
+}
+
+@media (max-width:500px) {
+  .main-top__slider-item {
+    height: calc(100vh - 75px);
   }
 }
 
