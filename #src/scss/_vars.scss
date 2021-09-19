@@ -24,3 +24,32 @@
   line-height: 30px;
   font-family: 'ALSAlumnaRegular';
 }
+
+%aside-btn {
+  z-index: 6;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+
+  display: none;
+  width: 45px;
+
+  & div {
+    width: 45px;
+    height: 4px;
+    background-color: rgba(#000, .6);
+    border-radius: 2px;
+
+    &:first-child {
+      width: 30px;
+    }
+    &:last-child {
+      width: 23px;
+    }
+  }
+
+  div + div {
+    margin-top: 5px;
+  }
+ 
+}

@@ -1,5 +1,7 @@
 $('.catalogue-btn').on('click', function(e) {
+
   e.stopPropagation()
+  console.log('working')
   $('.catalogue-aside').addClass('shown');
   $('body').addClass('lock');
 

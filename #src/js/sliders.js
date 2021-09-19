@@ -76,24 +76,22 @@ $(".page-section__items").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-            },
+      },
     },
   ],
 });
 
-$(".page-section__items-narrow").slick({
+$(".catalogue__items").slick({
   mobileFirst: true,
   slidesToShow: 1,
-  arrows: true,
   infinite: false,
+  prevArrow: '<img class="slider-arr slider-arr-left" src="images/arr-right.svg" alt="">',
+  nextArrow: '<img class="slider-arr slider-arr-right" src="images/arr-right.svg" alt="">',
+
   responsive: [
     {
-      breakpoint: 630,
+      breakpoint: 631,
       settings: "unslick",
     },
   ],
 });
-
-// $('.page-section__items').slick({
-
-// })
