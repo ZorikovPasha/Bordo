@@ -1,4 +1,3 @@
-
 $('.category-btn').on('click', function(e) {
 
   $('.wrapper').addClass('covered')
@@ -11,9 +10,7 @@ $('.category-btn').on('click', function(e) {
 
 
 $(document).on('click', function(e) {
-  
   if ( $('.category-aside').hasClass('shown') && $(e.target).closest('.category-aside').length == 0) {
-
     $('.category-aside').removeClass('shown');
 
     setTimeout(function() {

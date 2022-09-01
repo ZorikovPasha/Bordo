@@ -5,9 +5,6 @@ $('.main-top__slider').slick({
   // autoplay: 3000,
 });
 
-
-  // слайдер мелких картинок. Связан со слайдером больших картинок
-
   $('.product-card__images').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -28,9 +25,6 @@ $('.main-top__slider').slick({
     fade: true,
   });
 
-  // большой слайдер. Соединяет в себе слайдер маленьких картинок и больших картинок.
-  // связан со  слайдером точек цветов.
-
   $('.product-card__slider').slick({
     fade: true,
     arrows: false,
@@ -47,8 +41,6 @@ $('.main-top__slider').slick({
     asNavFor: '.product-card__slider',
     focusOnSelect: true,
   });
-
-
 
 $(".page-section__items").slick({
   mobileFirst: true,
