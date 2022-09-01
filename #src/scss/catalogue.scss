@@ -5,13 +5,10 @@
 }
 
 .catalogue-aside {
-
-
   &__body {
     
     max-width: 222px;
     width: 100%;
-  
   }
 
   // .catalogue-aside__title
@@ -22,16 +19,6 @@
     margin-bottom: 55px;
     font-weight: 400;
     font-family: 'ALSAlumnaRegular';
-  }
-
-  // .catalogue-aside__list
-
-  &__list {
-  }
-
-  // .catalogue-aside__item
-
-  &__item {
   }
 
   // .catalogue-aside__link
@@ -53,7 +40,6 @@
 .catalogue-body {
   width: calc(100% - 222px);
   position: relative;
-
 }
 
 .catalogue-body__wrapper {
@@ -62,9 +48,6 @@
 
 
 .catalogue {
-
-  // .catalogue__banner
-
   &__banner {
     background-image: url('../images/banner-bg.jpg');
     background-position: center;
